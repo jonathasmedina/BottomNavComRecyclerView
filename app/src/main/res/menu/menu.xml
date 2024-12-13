@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/ferramenta"
+        android:icon="@drawable/list"
+        android:title="Listar" />
+    <item
+        android:id="@+id/cronograma"
+        android:icon="@drawable/search"
+        android:title="Procurar" />
+
+<!--    ícone importado de:
+https://fonts.google.com/icons?selected=Material+Icons:search:&icon.size=24&icon.color=%23EFEFEF&icon.query=sear
+para importar no Android Studio:
+- botão direito em
+res/new/Vector Asset/local file/escolher arquivo em path
+-->
+</menu>
+
