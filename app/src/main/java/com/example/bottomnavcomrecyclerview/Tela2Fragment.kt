@@ -1,6 +1,7 @@
 package com.example.bottomnavcomrecyclerview
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -39,8 +40,9 @@ class Tela2Fragment : Fragment() {
             }
 
             override fun onQueryTextChange(p0: String?): Boolean {
+                //Log.e("aqui","digitado: " + p0.toString())
                 meuRecyclerAdapter.filtrar(p0.toString())
-                return false;
+                return true;
             }
         })
 
@@ -55,7 +57,15 @@ class Tela2Fragment : Fragment() {
         arrayItens.add(Pessoa("João da Silva", "CEO", R.drawable.aiphoto))
         arrayItens.add(Pessoa("Maria José", "Desenvolvedor Senior", R.drawable.aiphoto))
         arrayItens.add(Pessoa("Pedro Paulo", "Desenvolvedor Junior", R.drawable.aiphoto))
-
+        arrayItens.add(Pessoa("João da Silva", "CEO", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("Maria José", "Desenvolvedor Senior", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("Pedro Paulo", "Desenvolvedor Junior", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("João da Silva", "CEO", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("Maria José", "Desenvolvedor Senior", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("Pedro Paulo", "Desenvolvedor Junior", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("João da Silva", "CEO", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("Maria José", "Desenvolvedor Senior", R.drawable.aiphoto))
+        arrayItens.add(Pessoa("Pedro Paulo", "Desenvolvedor Junior", R.drawable.aiphoto))
         arrayItens.add(Pessoa("João da Silva", "Desenvolvedor Pleno", R.drawable.aiphoto))
         arrayItens.add(Pessoa("Francisca", "Full Stacker", R.drawable.aiphoto))
         arrayItens.add(Pessoa("Edilene Pereira", "Back-end Developer", R.drawable.aiphoto))
